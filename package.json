@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "license": "GLWTPL",
+  "scripts": {
+    "test": "jest"
+  }
+}
