@@ -11,7 +11,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
-
+    events:
+      - http: POST /
 
 plugins:
   - serverless-jest-plugin

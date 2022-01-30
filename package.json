@@ -8,7 +8,5 @@
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {
-    "aws-cdk-lib": "^2.10.0"
-  }
+  "dependencies": {}
 }
