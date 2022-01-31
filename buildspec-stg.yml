@@ -21,6 +21,7 @@ phases:
       - serverless package --package artifacts/stg --stage stg -v
       - pwd
       - ls -lA
+      - find artifacts
 
   post_build:
     commands:
