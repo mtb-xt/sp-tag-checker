@@ -52,4 +52,5 @@ Here's a list of my thoughts, how this project can be further improved (time per
 Thank you for your consideration. Here's an obligatory 'parse HTML with RegEx' joke:
 
 ![**t_he_ ich​**or permeat_es al_l MY FAC_E_](https://i.redd.it/k6sded6b9mkz.png)
+
 [Taken from here :)](https://stackoverflow.com/a/1732454)
