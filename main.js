@@ -1,3 +1,4 @@
+// local exec script for tag checker implementation, just uses all test strings from 'tests' array
 const fn = require('./modules/checktags.js');
 
 const tests = [
@@ -9,10 +10,9 @@ const tests = [
   '<B><C>This should be centred and in boldface, but there is a missing closing tag</C>',
   'The <center> cannot hold it is too late. ',
   '<A><X><B><C>This should be centred and in boldface, but there is a missing closing tag</C></B>',
-
+  '<P>Hello</p>'
 ]
 
-fn.checkTags('<P>Hello</p>');
 for (const testline of tests) {
   console.log(testline);
   console.log(fn.checkTags(testline));

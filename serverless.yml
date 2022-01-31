@@ -2,7 +2,6 @@ service: tag-checker
 
 frameworkVersion: '2 || 3'
 
-
 provider:
   name: aws
   runtime: nodejs14.x
@@ -14,9 +13,3 @@ functions:
     handler: handler.hello
     events:
       - http: POST /
-
-plugins:
-  - serverless-jest-plugin
-
-custom:
-  jest:
