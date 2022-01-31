@@ -11,11 +11,12 @@ phases:
       - npm --version
       - npm install --silent --progress=false -g serverless
       - npm install --silent --save–dev serverless-stack-output
-      
+
   build:
     commands:
       ## Integration test environment
       #- serverless deploy --stage test -v
+      - npm test
       - mkdir artifacts
       - mkdir artifacts/stg
       - serverless package --package artifacts/stg --stage stg
