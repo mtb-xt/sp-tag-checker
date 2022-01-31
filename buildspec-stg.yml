@@ -20,7 +20,7 @@ phases:
       - mkdir artifacts/stg
       - serverless package --package artifacts/stg --stage stg -v
       - pwd
-      - find . 
+      - ls -lA
 
   post_build:
     commands:
