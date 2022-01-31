@@ -89,6 +89,8 @@ Resources:
             - logs:DeleteLogGroup
             - s3:putObject
             - s3:getObject
+            - s3:putObjectAcl
+            - s3:put
             - codebuild:*
             - 'cloudformation:List*'
             - 'cloudformation:Get*'
@@ -98,6 +100,11 @@ Resources:
             - 'cloudformation:CreateUploadBucket'
             - 'cloudformation:DeleteStack'
             - 'cloudformation:Describe*'
+            - 'cloudformation:CreateChangeSet'
+            - 'cloudformation:ExecuteChangeSet'
+            - 'cloudformation:DescribeChangeSet'
+            - 'cloudformation:DeleteChangeSet'
+            - 'cloudformation:CancelUpdateStack'
             - 'cloudformation:UpdateStack'
             - 'lambda:Get*'
             - 'lambda:List*'
@@ -120,6 +127,8 @@ Resources:
             - 's3:PutObject'
             - 's3:GetObject'
             - 's3:DeleteObject'
+            - s3:GetEncryptionConfiguration
+            - s3:PutEncryptionConfiguration
             - 'iam:PassRole'
             - 'kinesis:*'
             - 'iam:GetRole'
