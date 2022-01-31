@@ -127,8 +127,9 @@ Resources:
             - 's3:PutObject'
             - 's3:GetObject'
             - 's3:DeleteObject'
-            - s3:GetEncryptionConfiguration
-            - s3:PutEncryptionConfiguration
+            - 's3:GetEncryptionConfiguration'
+            - 's3:PutEncryptionConfiguration'
+            - 's3:PutBucketAcl'
             - 'iam:PassRole'
             - 'kinesis:*'
             - 'iam:GetRole'
@@ -141,6 +142,7 @@ Resources:
             - 'events:Remove*'
             - 'events:Delete*'
             - 'dynamodb:*'
+
           Resource: "*"
       Roles:
         -  !Ref CodeBuildRole

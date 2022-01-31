@@ -14,6 +14,6 @@ const tests = [
 ]
 
 for (const testline of tests) {
-  console.log(testline);
-  console.log(fn.checkTags(testline));
+  console.log(`Test line: ${testline}`);
+  console.log(`Function output: ${fn.checkTags(testline)}`);
 }
